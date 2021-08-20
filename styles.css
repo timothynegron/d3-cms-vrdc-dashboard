@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+}
+
+select {
+  width: 200px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f3f3f3;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 80px;
+
+  background-color: #48718b;
+  color: white;
+
+  border-bottom: solid;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
+}
+
+#main-body {
+  display: flex;
+  flex-direction: row;
+}
+
+#selectors {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  /* height: 100%;  */
+
+  background-color: rgb(236, 236, 236);
+}
+
+#sum-and-svg {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 20px;
+
+  background-color: #f3f3f3;
+}
+
+#summary {
+  display: flex;
+  flex-direction: column;
+
+  height: 180px;
+
+  border: solid;
+  border-width: 1px;
+  border-color: #ececec;
+  border-radius: 2px;
+  background-color: white;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  background-color: white;
+}
+
+#hospital-name {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+#stats {
+  display: flex;
+  justify-content: space-between;
+
+  /* width: 100px; */
+
+  margin-top: 10px;
+}
+
+.stats-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  width: 250px;
+}
+
+#bar-chart {
+  border-color: black;
+
+  border-radius: 10%;
+
+  margin-bottom: 40px;
+}
+
+#data-visualizations {
+  display: flex;
+  flex-direction: row;
+}
+
+#pie-charts {
+  margin-left: 50px;
+}
+
+#pie-charts-1 {
+}
+
+#pie-charts-2 {
+  margin-top: 10px;
+  margin-bottom: 55px;
+}
+
+.borders {
+  border: solid;
+  border-width: 1px;
+  border-color: #d8d8d8;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.selectors-margin {
+  margin-top: 35px;
+}

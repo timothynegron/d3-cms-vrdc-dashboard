@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- styles.css -->
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <title>Timothy Negron | Final Project</title>
+    </head>
+    <body>
+        <div id="app">
+            <!-- Title -->
+            <div id="title">
+                <h2>Hospital-Level CMS Virtual Research Data Center</h2>
+            </div>
+            <!-- Main Body -->
+            <div id="main-body">
+                <div id="selectors">
+                    <div class="selectors-margin" id="state-selector-section">
+                        <!-- State Selector -->
+                        <h5>State</h5>
+                        <select id="state-selector">
+                            <option>Select</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="CA">California</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NY">New York</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="TX">Texas</option>
+                            <option value="WA">Washington</option>
+                        </select>
+                    </div>
+                    <div class="selectors-margin" id="hospital-selector-section">
+                        <!-- Hospital Selector -->
+                        <h5 id="hospital-selector-title">Hospital</h5>
+                        <select id="hospital-selector">
+                            <option>Select</option>
+                        </select>
+                    </div>
+                    <div class="selectors-margin" id="sort-selector-section">
+                        <!-- Sort Selector -->
+                        <h5>Sort</h5>
+                        <select id="sort-selector">
+                            <option>High to Low</option>
+                            <option>Low to High</option>
+                            <option>Alphabetical</option>
+                        </select>
+                    </div>
+                    <div class="selectors-margin" id="analysis-selector-section">
+                        <h5>Change Analysis</h5>
+                        <select>
+                            <option>Hospital Readmission Rate: State wide</option>
+                            <option>Hospital Readmission Rate: Show Only Hospitals within a 250 mile Radius</option>
+                            <option>DRG Analysis: State Wide</option>
+                        </select>
+                    </div>
+                    <div class="selectors-margin" id="bar-chart-metrics-selector-section">
+                        <h5>Change Metrics</h5>
+                        <select>
+                            <option>Hospital Readmission Rate</option>
+                            <option>Index Hospitalizations Count</option>
+                            <option>Readmission Rate to Same Hospital</option>
+                            <option>Readmission Rate to Other Hospital</option>
+                            <option>Expenitures to Same Hospital</option>
+                            <option>Expenitures to Other Hospital</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="sum-and-svg">
+                    <div id="summary">
+                        <h2 id="hospital-name">Hospital Name</h2>
+                        <div id="stats">
+                            <div class="stats-div">
+                                <h6>Total Hospital</h6>
+                                <h6>Readmission Rate</h6>
+                                <h2 id="hospital-readmission-rate"></h2>
+                            </div>
+                            <div class="stats-div">
+                                <h6>Proportion of HRR</h6>
+                                <h6>Same Hospital</h6>
+                                <h2 id="HRR-same-hospital-proportion"></h2>
+                            </div>
+                            <div class="stats-div">
+                                <h6>Proportion of HRR</h6>
+                                <h6>Other Hospital</h6>
+                                <h2 id="HRR-other-hospital-proportion"></h2>
+                            </div>
+                            <div class="stats-div">
+                                <h6>Same Hospital HRR</h6>
+                                <h6>Avg. Expenitures</h6>
+                                <h2 id="HRR-same-hospital-expenitures"></h2>
+                            </div>
+                            <div class="stats-div">
+                                <h6>Other Hospital HRR</h6>
+                                <h6>Avg. Expenitures</h6>
+                                <h2 id="HRR-other-hospital-expenitures"></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="data-visualizations">
+                        <div id="bar-chart"></div>
+                        <div id="pie-charts">
+                            <div id="pie-charts-1"></div>
+                            <div id="pie-charts-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>
